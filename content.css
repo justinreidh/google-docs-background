@@ -1,0 +1,42 @@
+#docs-background-image-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.18;
+}
+
+.kix-appview-editor {
+  position: relative !important;
+  z-index: 1;
+}
+
+/* Standard paged mode */
+.kix-page,
+.kix-canvas-tile-content {
+  background: transparent !important;
+}
+
+/* Pageless mode support */
+.docs-scrollable-area,
+.kix-rotatingtilemanager,
+.kix-canvas-tile-content,
+.kix-page-pageless,
+.kix-pageless-editor,
+.kix-appview-editor {
+  background: transparent !important;
+}
+
+/* Remove white editor backgrounds Google injects */
+.canvas-first-page,
+.kix-page-content-wrapper,
+.kix-page-column {
+  background: transparent !important;
+}
+
+body {
+  background: transparent !important;
+}
